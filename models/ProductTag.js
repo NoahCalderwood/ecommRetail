@@ -13,10 +13,6 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
-    price: {
-      type: DataTypes.DECIMAL(10, 2),
-      allowNull: false,
-    },
     product_id: {
       type: DataTypes.INTEGER,
       references: {
