@@ -49,7 +49,7 @@ router.post('/', (req, res) => {
   */
   Product.create(req.body)
     .then((product) => {
-      console.log(req.body.tagIds.length);
+      console.log(req.body.tagIds);
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
@@ -125,7 +125,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!productData) {
-      res.status(404).json({ message: 'No category found with that id!' });
+      res.status(404).json({ message: 'No Product found with that id!' });
       return;
     }
 

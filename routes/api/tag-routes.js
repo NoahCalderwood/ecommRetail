@@ -40,6 +40,7 @@ router.post('/', async (req, res) => {
   try {
     const locationData = await Tag.create({
       product_id: req.body.product_id,
+      tag_name: req.body.tag_name
     });
     res.status(200).json(locationData);
   } catch (err) {
