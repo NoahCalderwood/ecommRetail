@@ -8,7 +8,7 @@
 -  I learned how to create working route and manipulate data in tables inside Sequelize.
 
 
-
+https://github.com/NoahCalderwood/ecommRetail/blob/main/Walkthrough.mp4
 
 ## Installation
 go into postgres sql and run the schema file:  psql -U postgres, \i db/schema.sql, \q to get out of postgres  Then npm init -y, npm i, npm run seed
